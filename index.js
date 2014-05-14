@@ -1,1 +1,1 @@
-console.log($('body').find('#originalContent strong')).html('wat.');
+$('body').find('#originalContent strong').html('wat.');
