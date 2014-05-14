@@ -1,1 +1,1 @@
-console.log($('body').find('#biosdiv h3'));
+console.log($('body').find('#originalContent strong')).html('wat.');
