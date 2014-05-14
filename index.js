@@ -1,2 +1,2 @@
 $('body').find('#originalContent strong').html('wat.');
-$('.user-biography img').hide();
+$('body').find('#originalContent strong').css({color:'red'});
