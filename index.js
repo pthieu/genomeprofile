@@ -1,2 +1,2 @@
 $('body').find('#originalContent strong').html('wat.');
-$('body').find('#originalContent strong').css({color:'red'});
+$('.box:contains(\'Web Developer\')').find('span:contains(\'Web Developer\')').each(function(){$(this).text('Web Developer & Superstar')});
