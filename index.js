@@ -1,2 +1,2 @@
-$('body').find('#originalContent strong').html('wat.');
+$('body').find('#originalContent strong').html('I used to be an ASIC Design/Verification Engineer at Qualcomm, until I took an arrow to the knee; now I make websites for pharmaceutical companies :v');
 $('.box:contains(\'Web Developer\')').find('span:contains(\'Web Developer\')').each(function(){$(this).text('Master Web Developer & Superstar')});
