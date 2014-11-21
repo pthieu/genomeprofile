@@ -8,7 +8,7 @@ debugger;
 getCurrentUser();
 
 function getCurrentUser() {
-  var getURL = 'http://genome.klick.com/api/User/Current?callback=';
+  var getURL = 'https://genome.klick.com/api/User/Current?callback=test';
   jQuery.ajax({
     url: getURL,
     dataType: 'jsonp',
