@@ -4,23 +4,23 @@ jQuery('body').find('#originalContent strong').html('I used to be an ASIC Design
 // jQuery('.box:contains(\'Web Developer\')').find('span:contains(\'Web Developer\')').each(function() {
   // $(this).text('Master Web Developer & Superstar');
 // });
-
+debugger;
 getCurrentUser();
 
 function getCurrentUser() {
-var getURL = 'http://genome.klick.com/api/User/Current';
-jQuery.ajax({
-  url: getURL,
-  dataType: 'jsonp',
-}).done(function(data) {
-  var d = data.Entries[0];
-  console.log(d);
-  user = {
-    'First': d.FirstName,
-    'Last': d.LastName,
-    'UID': d.UserID,
-    'Username': d.Username
-  }
-  console.log(user);
-});
+  var getURL = 'http://genome.klick.com/api/User/Current?callback=';
+  jQuery.ajax({
+    url: getURL,
+    dataType: 'jsonp',
+  }).done(function(data) {
+    var d = data.Entries[0];
+    console.log(d);
+    user = {
+      'First': d.FirstName,
+      'Last': d.LastName,
+      'UID': d.UserID,
+      'Username': d.Username
+    }
+    console.log(user);
+  });
 }
