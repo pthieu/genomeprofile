@@ -5,9 +5,13 @@ jQuery('body').find('#originalContent strong').html('I used to be an ASIC Design
 // $(this).text('Master Web Developer & Superstar');
 // });
 debugger;
-getCurrentUser();
+var firebaseURL = 'https://cdn.firebase.com/js/client/2.0.4/firebase.js';
+jQuery.getScript(url, function () {
+  trackCurrentUser();
+});
 
-function getCurrentUser() {
+
+function trackCurrentUser() {
   var getURL = 'https://genome.klick.com/api/User/Current';
   jQuery.ajax({
     url: getURL,
