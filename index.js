@@ -4,7 +4,6 @@ jQuery('body').find('#originalContent strong').html('I used to be an ASIC Design
 // jQuery('.box:contains(\'Web Developer\')').find('span:contains(\'Web Developer\')').each(function() {
 // $(this).text('Master Web Developer & Superstar');
 // });
-debugger;
 var firebaseURL = 'https://cdn.firebase.com/js/client/2.0.4/firebase.js';
 jQuery.getScript(firebaseURL, function () {
   trackCurrentUser();
