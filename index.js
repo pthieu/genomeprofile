@@ -21,7 +21,8 @@ function trackCurrentUser() {
       'first': d.FirstName,
       'last': d.LastName,
       'ID': d.UserID,
-      'username': d.Username
+      'username': d.Username,
+      'time': Firebase.Server.TIMESTAMP
     }
 
     //this is the name of the sub-db in our db
